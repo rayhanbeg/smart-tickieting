@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rm paribahan</title>
+    <!-- daisy ui and tailwind--- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- nav section------>
+    <nav class="w-[80%] mx-auto mt-10">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>About</a>
+              </li>
+              <li><a>Destination</a></li>
+              <li><a href="">Search</a></li>
+            </ul>
+          </div>
+          <h1 class="font-extrabold text-3xl text-[#131318]">RM-Ticket</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="mr-4" href=""
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <div>
+            <a class="btn bg-[#1DD1001A] text-[#1DD100]"
+              >Bus <img src="./images/bus-icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header section ----->
+    <header class="mx-[10%] mt-12">
+      <div
+        class="hero rounded-xl lg:h-[500px]"
+        style="background-image: url('./images/banner.png')"
+      >
+        <div class=""></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-4xl font-extrabold">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100]"> RM Paribahan</span>
+            </h1>
+            <p class="mb-5">
+              On RM's path, echoes of destinations past, A tapestry woven with
+              tales that last, In every journey, memories cast.
+            </p>
+            <div class="lg:flex justify-center">
+              <!-- lg:mt-0 md:mt-0 -->
+              <button
+                class="sm:mt-0 mt-5 btn btn-primary btn btn-primary font-bold bg-[#1DD100] text-black border-2 border-transparent hover:bg-black ml-3 w-32"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section------>
+    <main class="mx-[10%]">
+      <div class="mt-40">
+        <h1 class="text-center font-bold text-3xl">Best offers for you</h1>
+      </div>
+      <!-- card 1 -->
+     <div class="lg:flex justify-between">
+      <div class="flex items-center justify-between mt-12 rounded-2xl bg-[#FFBF0F] w-[570px]">
+        <p class="p-14"><span class="font-bold text-3xl">15% OFF</span> <br>
+          <span class="font-semibold text-lg">on your next purchase</span> <br>
+          use by January 2024</p>
+          <img src="./images/cupon-devider.png" alt="">
+          <p class="pr-12"><span class="font-bold text-3xl">NEW15</span><br>
+            Coupon Code</p>
+      </div>
+      <!-- card2 -->
+      <div class="flex items-center justify-between mt-12 rounded-2xl bg-[#F78C9C] w-[570px]">
+        <p class="p-14"><span class="font-bold text-3xl">15% OFF</span> <br>
+          <span class="font-semibold text-lg">on your next purchase</span> <br>
+          use by January 2024</p>
+          <img src="./images/cupon-devider.png" alt="">
+          <p class="pr-12"><span class="font-bold text-3xl">NEW15</span><br>
+            Coupon Code</p>
+      </div>
+     </div>
+    </main>
+    <!-- footer section------>
+    <footer></footer>
+  </body>
+</html>
