@@ -38,13 +38,24 @@ for(const btn of allBtn){
         document.getElementById('total-price').innerText = totalCostConvert;
 
 
-
+        if (count > 4) {
+            console.log('You cannot select More than 4 tickets');
+            alert("You cannot select More than 4 tickets");
+            totalCost -= 550;
+            count -= 1;
+            document.getElementById('seat-count').innerText = count;
+            return;
+    }
     
+    
+        button.disabled = true;
+        button.style.backgroundColor = "green"
+        
         var buttons = button.parentElement.querySelectorAll('.btn');
         buttons.forEach(function(btn) {
         //   btn.classList.remove('bg-green-400');
         });
-        button.classList.add('bg-green-400');
+        // button.classList.add('bg-green-400');
 
 
 
@@ -56,12 +67,7 @@ for(const btn of allBtn){
 
 
         
-          if(totalCost > 2200){
-        console.log('You cannot select More than 4 tickets',);
-        alert("You cannot select More than 4 tickets")
-        totalCost -= 550;
-        return;
-    }
+     
 
 
 
@@ -123,9 +129,12 @@ for(const btn of allBtn){
                 discount = convertedTotal * 0.20;
                 
              } else {
-                alert("Invalid Coupon Code No Discount");
+                alert("Invalid Coupon Code or inter your coupon code");
                 return;
               }
+              
+            //   hide apply btn---
+              document.getElementById("apply-button").style.display = "none";
 
               document.getElementById("total-price-discount").innerText =
               convertedTotal - discount;
@@ -134,6 +143,7 @@ for(const btn of allBtn){
               document.getElementById("total-price-discount").innerText = convertedTotal;
             }
           }
+          
 
 
 

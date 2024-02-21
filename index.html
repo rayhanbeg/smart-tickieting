@@ -18,13 +18,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="">
+  <body class="inter-font">
     <!-- nav section------>
     <nav class="w-[80%] mx-auto mt-10">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class=" lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -92,7 +92,7 @@
             </p>
             <div class="lg:flex justify-center">
               <!-- lg:mt-0 md:mt-0 -->
-             <a href="#paribahan"> <button onclick="buttonId()" id="buy-ticket"
+             <a href="#Buy-section"> <button onclick="buttonId()" id="buy-ticket"
               class="rounded-md p-3 font-bold bg-[#1DD100] text-black border-2 border-transparent hover:bg-black ml-3 w-32"
             >
               Buy Tickets
@@ -106,7 +106,7 @@
     <main class="">
       <!-- main offer section-- -->
       <section id="offer-section" class="mx-[14%]">
-        <div class="mt-40">
+        <div class="mt-20 lg:mt-36">
           <h1 class="text-center font-bold text-3xl">Best offers for you</h1>
         </div>
         <!-- card 1 -->
@@ -122,7 +122,7 @@
             </p>
             <img src="./images/cupon-devider.png" alt="" />
             <p class="pr-10">
-              <span class="font-bold text-3xl">NEW15</span><br />
+              <span class="font-bold lg:text-3xl">NEW15</span><br />
               Coupon Code
             </p>
           </div>
@@ -132,13 +132,13 @@
           >
             <p class="p-14">
               <span class="font-bold text-3xl">20% OFF</span> <br />
-              <span class="font-semibold text-lg">on your next purchase</span>
+              <span class="font-semibold lg:text-lg">on your next purchase</span>
               <br />
               use by February 2024
             </p>
             <img src="./images/cupon-devider.png" alt="" />
             <p class="pr-10">
-              <span class="font-bold text-3xl">COUPLE20</span><br />
+              <span class="font-bold lg:text-3xl">COUPLE20</span><br />
               Coupon Code
             </p>
           </div>
@@ -159,11 +159,11 @@
               and comfortable journeys across the country.
             </p>
           </div>
-          <div class="flex justify-between rounded-2xl bg-[#FFFFFF] shadow-lg">
+          <div class="lg:flex lg:justify-between rounded-2xl bg-[#FFFFFF] shadow-lg">
             <div>
-              <div class="lg:flex justify-between lg:space-x-60 pl-8 pt-8">
+              <div class="lg:flex lg:justify-between lg:space-x-60 pl-8 pt-8">
                 <div class="">
-                  <div class="flex gap-3">
+                  <div class="lg:flex gap-3">
                     <div>
                       <img src="./images/bus-logo.png" alt="" />
                     </div>
@@ -176,13 +176,13 @@
                   </div>
                 </div>
                 <h1 class="mt-2">
-                  <a class="flex gap-1 p-2 rounded-sm bg-[#1DD1001A] text-[#1DD100]"
+                  <a class="lg:flex gap-1 p-2 rounded-sm bg-[#1DD1001A] text-[#1DD100]"
                     ><img src="./images/seat-green.png" alt="" /> <span id="left">40</span> Seats left 
                   </a>
                 </h1>
               </div>
               <!-- route -->
-              <div class="bg-[#F7F8F8] mt-5 ml-6 p-4 rounded-lg">
+              <div class="bg-[#F7F8F8] mt-5 ml-6 p-4 rounded-lg mr-5">
                 <div class="pb-6 border-b-2">
                   <div class="flex justify-between">
                     <h1>Route</h1>
@@ -195,24 +195,24 @@
                     <p>9:00 PM</p>
                   </div>
                 </div>
-                <div class="flex justify-around gap-6 mt-8">
-                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg">
+                <div class="lg:flex justify-around gap-6 mt-8">
+                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg mb-2">
                     Boarding Point - Laxmipur
                   </h1>
-                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg">
+                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg mb-2">
                     Dropping Point - Bogura
                   </h1>
-                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg">
+                  <h1 class="font-medium bg-[#03071208] p-4 rounded-lg mb-2">
                     Est. Time - 11 Hour
                   </h1>
                 </div>
               </div>
             </div>
-            <img src="./images/info-devider.png" alt="" />
+            <img src="./images/info-devider.png"  class="rotate-90 my-auto mx-auto hidden lg:block lg:rotate-0 lg:mx-0 lg:my-0" alt="" />
             <div
-              class="flex flex-col justify-center text-center items-center lg:pr-16 pt-8"
+              class="flex flex-col justify-center lg:flex lg:flex-col lg:justify-center text-center items-center lg:pr-16 pt-8"
             >
-              <img src="./images/fare.png" alt="" />
+              <img class="" src="./images/fare.png" alt="" />
               <h1>
                 <span class="font-bold text-3xl">550 Taka</span>
                 <br />
@@ -221,8 +221,8 @@
             </div>
           </div>
           <!-- select seat- -->
-          <div class="rounded-2xl bg-[#FFFFFF] shadow-lg mt-6">
-            <div class="flex justify-between">
+          <div id="Buy-section" class="rounded-2xl bg-[#FFFFFF] shadow-lg mt-6">
+            <div class="lg:flex justify-between">
               <div>
                 <div>
                   <div class="p-6">
@@ -250,93 +250,93 @@
                 <div class="pl-6 grid grid-cols-2 gap-2 border-r-2 pr-6 mt-6">
                   <a class="flex gap-2 items-center">
                     <h1>A</h1>
-                    <button id="A1" onclick="selectButton()" class="btn w-[110px]">A1</button>
-                    <button  id="A2" onclick="selectButton()" class="btn w-[110px]">A2</button>
+                    <button id="A1" onclick="selectButton()" class="btn lg:w-[100px]">A1</button>
+                    <button  id="A2" onclick="selectButton()" class="btn lg:w-[100px]">A2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="A3" onclick="selectButton()" class="btn w-[110px]">A3</button>
-                    <button id="A4" onclick="selectButton()" class="btn w-[110px]">A4</button>
+                    <button id="A3" onclick="selectButton()" class="btn lg:w-[100px]">A3</button>
+                    <button id="A4" onclick="selectButton()" class="btn lg:w-[100px]">A4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>B</h1>
-                    <button id="B1" onclick="selectButton()" class="btn w-[110px]">B1</button>
-                    <button id="B2" onclick="selectButton()" class="btn w-[110px]">B2</button>
+                    <button id="B1" onclick="selectButton()" class="btn lg:w-[100px]">B1</button>
+                    <button id="B2" onclick="selectButton()" class="btn lg:w-[100px]">B2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="B3" onclick="selectButton()" class="btn w-[110px]">B3</button>
-                    <button id="B4" onclick="selectButton()" class="btn w-[110px]">B4</button>
+                    <button id="B3" onclick="selectButton()" class="btn lg:w-[100px]">B3</button>
+                    <button id="B4" onclick="selectButton()" class="btn lg:w-[100px]">B4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>C</h1>
-                    <button id="C1" onclick="selectButton()" class="btn w-[110px]">C1</button>
-                    <button id="C2" onclick="selectButton()" class="btn w-[110px]">C2</button>
+                    <button id="C1" onclick="selectButton()" class="btn lg:w-[100px]">C1</button>
+                    <button id="C2" onclick="selectButton()" class="btn lg:w-[100px]">C2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="C3" onclick="selectButton()" class="btn w-[110px]">C3</button>
-                    <button id="C4" onclick="selectButton()" class="btn w-[110px]">C4</button>
+                    <button id="C3" onclick="selectButton()" class="btn lg:w-[100px]">C3</button>
+                    <button id="C4" onclick="selectButton()" class="btn lg:w-[100px]">C4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>D</h1>
-                    <button id="D1" onclick="selectButton()" class="btn w-[110px]">D1</button>
-                    <button id="D2" onclick="selectButton()" class="btn w-[110px]">D2</button>
+                    <button id="D1" onclick="selectButton()" class="btn lg:w-[100px]">D1</button>
+                    <button id="D2" onclick="selectButton()" class="btn lg:w-[100px]">D2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="D3" onclick="selectButton()" class="btn w-[110px]">D3</button>
-                    <button id="D4" onclick="selectButton()" class="btn w-[110px]">D4</button>
+                    <button id="D3" onclick="selectButton()" class="btn lg:w-[100px]">D3</button>
+                    <button id="D4" onclick="selectButton()" class="btn lg:w-[100px]">D4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>E</h1>
-                    <button id="E1" onclick="selectButton()" class="btn w-[110px]">E1</button>
-                    <button id="E2" onclick="selectButton()" class="btn w-[110px]">E2</button>
+                    <button id="E1" onclick="selectButton()" class="btn lg:w-[100px]">E1</button>
+                    <button id="E2" onclick="selectButton()" class="btn lg:w-[100px]">E2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="E3" onclick="selectButton()" class="btn w-[110px]">E3</button>
-                    <button id="E4" onclick="selectButton()" class="btn w-[110px]">E4</button>
+                    <button id="E3" onclick="selectButton()" class="btn lg:w-[100px]">E3</button>
+                    <button id="E4" onclick="selectButton()" class="btn lg:w-[100px]">E4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>F</h1>
-                    <button id="F1" onclick="selectButton()" class="btn w-[110px]">F1</button>
-                    <button  id="F2 " onclick="selectButton()" class="btn w-[110px]">F2</button>
+                    <button id="F1" onclick="selectButton()" class="btn lg:w-[100px]">F1</button>
+                    <button  id="F2 " onclick="selectButton()" class="btn lg:w-[100px]">F2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="F3" onclick="selectButton()" class="btn w-[110px]">F3</button>
-                    <button id="F4" onclick="selectButton()" class="btn w-[110px]">F4</button>
+                    <button id="F3" onclick="selectButton()" class="btn lg:w-[100px]">F3</button>
+                    <button id="F4" onclick="selectButton()" class="btn lg:w-[100px]">F4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>G</h1>
-                    <button id="G1" onclick="selectButton()" class="btn w-[110px]">G1</button>
-                    <button id="G2" onclick="selectButton()" class="btn w-[110px]">G2</button>
+                    <button id="G1" onclick="selectButton()" class="btn lg:w-[100px]">G1</button>
+                    <button id="G2" onclick="selectButton()" class="btn lg:w-[100px]">G2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="G3" onclick="selectButton()" class="btn w-[110px]">G3</button>
-                    <button id="G4  onclick="selectButton()" class="btn w-[110px]">G4</button>
+                    <button id="G3" onclick="selectButton()" class="btn lg:w-[100px]">G3</button>
+                    <button id="G4" onclick="selectButton()" class="btn lg:w-[100px]">G4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>H</h1>
-                    <button id="H1" onclick="selectButton()" class="btn w-[110px]">H1</button>
-                    <button id="H2" onclick="selectButton()" class="btn w-[110px]">H2</button>
+                    <button id="H1" onclick="selectButton()" class="btn lg:w-[100px]">H1</button>
+                    <button id="H2" onclick="selectButton()" class="btn lg:w-[100px]">H2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="H3" onclick="selectButton()" class="btn w-[110px]">H3</button>
-                    <button id="H4" onclick="selectButton()" class="btn w-[110px]">H4</button>
+                    <button id="H3" onclick="selectButton()" class="btn lg:w-[100px]">H3</button>
+                    <button id="H4" onclick="selectButton()" class="btn lg:w-[100px]">H4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>I</h1>
-                    <button id="I1" onclick="selectButton()" class="btn w-[110px]">I1</button>
-                    <button id="I2" onclick="selectButton()" class="btn w-[110px]">I2</button>
+                    <button id="I1" onclick="selectButton()" class="btn lg:w-[100px]">I1</button>
+                    <button id="I2" onclick="selectButton()" class="btn lg:w-[100px]">I2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="I3" onclick="selectButton()" class="btn w-[110px]">I3</button>
-                    <button id="I4" onclick="selectButton()" class="btn w-[110px]">I4</button>
+                    <button id="I3" onclick="selectButton()" class="btn lg:w-[100px]">I3</button>
+                    <button id="I4" onclick="selectButton()" class="btn lg:w-[100px]">I4</button>
                   </a>
                   <a class="flex gap-2 items-center">
                     <h1>J</h1>
-                    <button id="J1" onclick="selectButton()" class="btn w-[110px]">J1</button>
-                    <button id="J2" onclick="selectButton()" class="btn w-[110px]">J2</button>
+                    <button id="J1" onclick="selectButton()" class="btn lg:w-[100px]">J1</button>
+                    <button id="J2" onclick="selectButton()" class="btn lg:w-[100px]">J2</button>
                   </a>
                   <a class="flex gap-2 items-center">
-                    <button id="J3" onclick="selectButton()" class="btn w-[110px]">J3</button>
-                    <button id="J4" onclick="selectButton()" class="btn w-[110px]">J4</button>
+                    <button id="J3" onclick="selectButton()" class="btn lg:w-[100px]">J3</button>
+                    <button id="J4" onclick="selectButton()" class="btn lg:w-[100px]">J4</button>
                   </a>
                 </div>
               </div>
@@ -354,7 +354,7 @@
                       <h1>Class</h1>
                       <h1>Price</h1>
                     </div>
-                    <div class="pb-6 border-b-2 w-full">
+                    <div class="pb-6">
                       
                         <ul class="[&>li]:flex [&>li]:justify-around [&>li]:w-full w-full"
                         id="selected-place-container"
@@ -366,22 +366,22 @@
                       
                     </div>
                     <div class="flex justify-between mt-2">
-                      <h1 class="font-medium p-4 rounded-lg">Total Price</h1>
-                      <p id="" class="p-4 font-medium rounded-lg">BDT <span id="total-price">0</span></p>
+                      <h1 class="font-medium p-2 lg:p-4 rounded-lg">Total Price</h1>
+                      <p id="" class="p-2 lg:p-4 font-medium rounded-lg">BDT <span id="total-price">0</span></p>
                     </div>
                   </div>
                   <!-- apply button -->
-                  <div class="bg-[#1DD1001A] rounded-2xl">
+                  <div class="flex lg:block rounded-2xl">
                     <input id="coupon-code"
-                      class="w-[370px] h-[56px] rounded-2xl p-4"
-                      placeholder="Have any coupon?"
+                      class="w-[140px] pr-5 h-[50px] mr-3 lg:mr-0 lg:w-[370px] lg:h-[56px] rounded-2xl py-4 pl-4 "
+                      placeholder="inter coupon"
                       type="text"
                     />
-                    <button onclick="updateGrandTotal('control')" class=" p-3 rounded-lg text-white bg-[#1DD100]">Apply</button>
+                    <button id="apply-button" onclick="updateGrandTotal('control')" class="mr-4 p-2 rounded-lg text-white bg-[#1DD100]">Apply</button>
                   </div>
                   <div class="flex justify-between gap-6 mt-2">
-                    <h1 id="" class="font-medium p-4 rounded-lg">Grand Total</h1>
-                    <h1 id="" class="font-medium p-4 rounded-lg">BDT <span id="total-price-discount">0</span></h1>
+                    <h1 id="" class="font-medium rounded-lg p-3 lg:p-4">Grand Total</h1>
+                    <h1 id="" class="font-medium rounded-lg p-3 lg:p-4">BDT <span id="total-price-discount">0</span></h1>
                   </div>
                 </div>
                 <!-- passenger input -->
@@ -389,7 +389,7 @@
                   <div class="pl-6">
                     <h1 class="font-semibold text-lg mb-2">Passenger Name*</h1>
                     <input id="nameInput"
-                      class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
+                      class="lg:h-[50px] lg:w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="text"
                       placeholder="Enter your name"
                     />
@@ -397,7 +397,7 @@
                   <div class="pl-6 mt-4">
                     <h1 class="font-semibold text-lg mb-2">Phone Number*</h1>
                     <input id="numberInput"
-                      class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
+                      class="lg:h-[50px] lg:w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="number"
                       placeholder="Enter your phone number"
                     />
@@ -405,14 +405,14 @@
                   <div class="pl-6 mt-4">
                     <h1 class="font-semibold text-lg mb-2">Email ID*</h1>
                     <input id="emailInput"
-                      class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
+                      class="lg:h-[50px] lg:w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="email"
                       placeholder="Enter your email id"
                     />
                   </div>
                   <div class="ml-6 mt-6">
                           <!-- Open the modal using ID.showModal() method -->
-               <button id="nextButton" class=" bg-[#1DD100] w-[400px] h-[48px] p-3 rounded-md" onclick="my_modal_5.showModal()">Next</button>
+               <button id="nextButton" class=" bg-[#1DD100] w-[215px] lg:w-[400px] lg:h-[48px] p-3 rounded-md" onclick="my_modal_5.showModal()">Next</button>
              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col gap-4 justify-center items-center text-center">
                 <img src="./images/success.png" alt="">
@@ -429,9 +429,9 @@
                </div>
                    </div>
                        </dialog>
-                   <div class="flex justify-between pr-28 pl-3">
-                    <h1>Terms and Conditions</h1>
-                    <h1 class="">Cancellation Policy</h1>
+                   <div class="flex justify-between pr-20 lg:pr-36 pl-3">
+                    <a>Terms and Conditions</a>
+                    <a class="">Cancellation Policy</a>
                    </div>
                   </div>
                 </div>
