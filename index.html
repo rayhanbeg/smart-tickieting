@@ -63,13 +63,12 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="mr-4" href=""
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
-          <div>
-            <a class="btn bg-[#1DD1001A] text-[#1DD100]"
-              >Bus <img src="./images/bus-icon.png" alt="" />
-            </a>
+          <div class="">
+            <button class="flex gap-1 p-3 rounded-md bg-[#1DD1001A] text-[#1DD100]">Bus
+              <img src="./images/bus-icon.png" alt="" />
+            </button>
+             
+           
           </div>
         </div>
       </div>
@@ -106,7 +105,7 @@
     <!-- main section------>
     <main class="">
       <!-- main offer section-- -->
-      <section id="offer-section">
+      <section id="offer-section" class="mx-[14%]">
         <div class="mt-40">
           <h1 class="text-center font-bold text-3xl">Best offers for you</h1>
         </div>
@@ -119,7 +118,7 @@
               <span class="font-bold text-3xl">15% OFF</span> <br />
               <span class="font-semibold text-lg">on your next purchase</span>
               <br />
-              use by January 2024
+              use by February 2024
             </p>
             <img src="./images/cupon-devider.png" alt="" />
             <p class="pr-10">
@@ -135,23 +134,23 @@
               <span class="font-bold text-3xl">20% OFF</span> <br />
               <span class="font-semibold text-lg">on your next purchase</span>
               <br />
-              use by January 2024
+              use by February 2024
             </p>
             <img src="./images/cupon-devider.png" alt="" />
             <p class="pr-10">
-              <span class="font-bold text-3xl">Couple 20</span><br />
+              <span class="font-bold text-3xl">COUPLE20</span><br />
               Coupon Code
             </p>
           </div>
         </div>
         <!-- button -->
         <div class="flex justify-center items-center mt-16 mb-20">
-          <button class="btn btn-outline btn-accent">See All Offers</button>
+          <button class="text-[#1DD100] border-2 p-4 rounded-md">See All Offers</button>
         </div>
       </section>
       <!-- Paribahan section--- -->
       <section class=" border-t-green-300 rounded-t-[80px] bg-[#F7F8F8] pb-16">
-        <div id="paribahan" class="pt-16  mx-[12%]">
+        <div id="paribahan" class="pt-16 mx-[12%]">
           <div class="text-center mb-16">
             <h1 class="font-bold text-3xl mb-6">R.M Paribahan</h1>
             <p class="font-normal">
@@ -177,8 +176,8 @@
                   </div>
                 </div>
                 <h1 class="mt-2">
-                  <a class="btn bg-[#1DD1001A] text-[#1DD100]"
-                    ><span id="left">40</span> Seats left <img src="./images/seat-green.png" alt="" />
+                  <a class="flex gap-1 p-2 rounded-sm bg-[#1DD1001A] text-[#1DD100]"
+                    ><img src="./images/seat-green.png" alt="" /> <span id="left">40</span> Seats left 
                   </a>
                 </h1>
               </div>
@@ -242,7 +241,7 @@
                     </div>
                   </div>
                   <div class="flex justify-end mr-16 mt-6">
-                    <button class="btn">
+                    <button class="">
                       <i class="fa-solid fa-vector-square"></i>
                     </button>
                   </div>
@@ -357,7 +356,7 @@
                     </div>
                     <div class="pb-6 border-b-2 w-full">
                       
-                        <ul class="[&>li]:flex [&>li]:justify-between [&>li]:w-full w-full"
+                        <ul class="[&>li]:flex [&>li]:justify-around [&>li]:w-full w-full"
                         id="selected-place-container"
                         
                       ></ul>
@@ -366,9 +365,9 @@
                       
                       
                     </div>
-                    <div class="flex justify-around gap-6 mt-2">
+                    <div class="flex justify-between mt-2">
                       <h1 class="font-medium p-4 rounded-lg">Total Price</h1>
-                      <h1 id="total-price" class="font-medium rounded-lg">BDT 0</h1>
+                      <p id="" class="p-4 font-medium rounded-lg">BDT <span id="total-price">0</span></p>
                     </div>
                   </div>
                   <!-- apply button -->
@@ -378,18 +377,18 @@
                       placeholder="Have any coupon?"
                       type="text"
                     />
-                    <button onclick="couponButton()" class=" p-3 rounded-lg text-white bg-[#1DD100]">Apply</button>
+                    <button onclick="updateGrandTotal('control')" class=" p-3 rounded-lg text-white bg-[#1DD100]">Apply</button>
                   </div>
-                  <div class="flex justify-around gap-6 mt-2">
+                  <div class="flex justify-between gap-6 mt-2">
                     <h1 id="" class="font-medium p-4 rounded-lg">Grand Total</h1>
-                    <h1 id="" class="font-medium p-4 rounded-lg">BDT <span class="total-price-discount">0</span></h1>
+                    <h1 id="" class="font-medium p-4 rounded-lg">BDT <span id="total-price-discount">0</span></h1>
                   </div>
                 </div>
-                <!-- passanger input -->
+                <!-- passenger input -->
                 <div class="ml-4 pb-12">
                   <div class="pl-6">
                     <h1 class="font-semibold text-lg mb-2">Passenger Name*</h1>
-                    <input
+                    <input id="nameInput"
                       class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="text"
                       placeholder="Enter your name"
@@ -397,7 +396,7 @@
                   </div>
                   <div class="pl-6 mt-4">
                     <h1 class="font-semibold text-lg mb-2">Phone Number*</h1>
-                    <input
+                    <input id="numberInput"
                       class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="number"
                       placeholder="Enter your phone number"
@@ -405,18 +404,31 @@
                   </div>
                   <div class="pl-6 mt-4">
                     <h1 class="font-semibold text-lg mb-2">Email ID*</h1>
-                    <input
+                    <input id="emailInput"
                       class="h-[50px] w-[400px] border-2 shadow-sm rounded-2xl p-4"
                       type="email"
                       placeholder="Enter your email id"
                     />
                   </div>
-                  <div class="ml-3 mt-6">
-                    <button
-                      class="sm:mt-0 mt-5 btn btn-primary btn btn-primary font-bold bg-[#1DD100] text-white border-2 border-transparent hover:bg-black ml-3 w-[400px]"
-                    >
-                      Next
-                    </button>
+                  <div class="ml-6 mt-6">
+                          <!-- Open the modal using ID.showModal() method -->
+               <button id="nextButton" class=" bg-[#1DD100] w-[400px] h-[48px] p-3 rounded-md" onclick="my_modal_5.showModal()">Next</button>
+             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box flex flex-col gap-4 justify-center items-center text-center">
+                <img src="./images/success.png" alt="">
+          <h3 class="font-bold text-lg text-[#27AE60]">SUCCESS</h3>
+           <p class="py-3 text-[#4A4A4A]">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you. 
+            <br><br>
+           <span class="text-[#4a4a4a88]"> Shortly you will find a confirmation in your email.</span></p>
+          <div class="modal-action">
+             <form method="dialog" class="">
+                   <!-- if there is a button in form, it will close the modal -->
+                    <a href="#header"> <button onclick="buttonId()" class="bg-[#27AE60] text-white p-3 rounded-md">Continue</button></a>
+                    </form>
+               </div>
+                   </div>
+                       </dialog>
                    <div class="flex justify-between pr-28 pl-3">
                     <h1>Terms and Conditions</h1>
                     <h1 class="">Cancellation Policy</h1>
@@ -430,7 +442,9 @@
       </section>
     </main>
     <!-- footer section------>
-    <footer></footer>
+    <footer>
+
+    </footer>
 
     <!-- script -->
     <script src="script.js/bus.js"></script>
