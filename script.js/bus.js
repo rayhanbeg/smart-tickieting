@@ -108,19 +108,19 @@ function updateGrandTotal(control) {
   }
 }
 
-// Get the input elements
+// input elements
 const nameInput = document.getElementById("nameInput");
 const numberInput = document.getElementById("numberInput");
 const emailInput = document.getElementById("emailInput");
 const nextButton = document.getElementById("nextButton");
 
-// Function to check if the input fields are filled
+// Function to check
 function checkInputs() {
   const nameValue = nameInput.value.trim();
   const emailValue = emailInput.value.trim();
   const numberValue = numberInput.value.trim();
 
-  // Enable the Next button only if name and email are not empty
+
   if (nameValue !== "" && emailValue !== "" && numberValue !== "") {
     nextButton.disabled = false;
   } else {
@@ -128,7 +128,6 @@ function checkInputs() {
   }
 }
 
-// Call the function whenever there's a change in the input fields
 nameInput.addEventListener("input", checkInputs);
 numberInput.addEventListener("input", checkInputs);
 emailInput.addEventListener("input", checkInputs);
